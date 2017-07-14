@@ -37,10 +37,35 @@
 </template>
 
 <script>
+import { Socket } from "phoenix/web/static/js/phoenix";
 import { mapGetters, mapActions } from 'vuex';
+
+console.log("Socket:", Socket)
 
 export default {
   name: 'hello',
+
+  created() {
+    let socket = new Socket("ws://localhost:4000/socket", {params: {user_id: "123"}})
+    socket.connect();
+
+    this.channel = socket.channel("room:lobby", {});
+    this.channel.on("new_msg", payload => {
+      payload.at = Date();
+      this.messages.push(payload);
+    });
+    this.channel.join()
+      .receive("ok", resp => { console.log("Joined successfully", resp) })
+      .receive("error", resp => { console.log("Unable to join", resp) })
+  },
+
+  data() {
+    return {
+      messages: [],
+      newMessage: '',
+      channel: null,
+    }
+  },
 };
 </script>
 

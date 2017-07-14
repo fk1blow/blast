@@ -25,6 +25,7 @@
     "express": "^4.14.1",
     "folktale": "^2.0.0-rc1",
     "font-awesome": "^4.7.0",
+    "phoenix": "^1.2.1",
     "ramda": "^0.24.1",
     "vue": "^2.2.6",
     "vue-class-component": "^5.0.1",
