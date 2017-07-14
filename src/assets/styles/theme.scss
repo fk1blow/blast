@@ -1,0 +1,23 @@
+@import "theme/variables.scss";
+
+
+/*
+  document
+*/
+
+html {
+  height: 100%;
+  font-size: $font-size-base;
+}
+
+body {
+  height: 100%;
+  font-family: $font-family-base;
+  background-color: $body-bg;
+  color: $brand-primary;
+}
+
+main {
+  // padding: $dimension-default-padding;
+  padding-top: 0;
+}

@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2015.promise",
+      "es6"
+    ],
+    "types": [
+      "vue-typescript-import-dts",
+      "reflect-metadata",
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+
+  "include": [
+    "src/**/*.ts"
+  ],
+
+  "compileOnSave": true
+}

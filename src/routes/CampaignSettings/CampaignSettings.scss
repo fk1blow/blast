@@ -1,0 +1,33 @@
+@import "../../assets/styles/theme/variables.scss";
+
+.btn {
+  &.wrap-line {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  &.btn-secondary {
+    height: 10rem;
+    border: none;
+    background: $gray;
+    color: $white;
+
+    &:active, &:focus {
+      border: none;
+    }
+
+    &.selected, &:active, &:focus {
+      background: $blue-windows;
+      color: $white;
+    }
+  }
+}
+
+.form-group label {
+  font-weight: $font-weight-thinner;
+}
+
+
+.form-control--calendar {
+  width: auto;
+}

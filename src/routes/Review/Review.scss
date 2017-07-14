@@ -1,0 +1,39 @@
+@import "../../assets/styles/theme/variables.scss";
+
+.text-input-preview {
+  line-height: $dimension-large;
+  font-size: $dimension-default;
+  color: #000;
+  background: $paper-gray;
+
+  .fa {
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  .text-input-value {
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+}
+
+.preview-container {
+  width: 500px; // "standard" for current impl of the banner preview
+  margin: 0 auto;
+
+  .preload {
+    height: 521px;
+    width: 500px;
+    background-color: $paper-gray;
+    color: $darkish-gray;
+    vertical-align: middle;
+    line-height: 10rem;
+  }
+}
+
+.review-section-item {
+  .form-group {
+    padding: $dimension-large;
+    background-color: $darkish-gray
+  }
+}

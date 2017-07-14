@@ -1,0 +1,182 @@
+@import "../../assets/styles/theme/variables.scss";
+
+.text-input-preview {
+  line-height: $dimension-large;
+  font-size: $dimension-default;
+  color: #000;
+  background: $paper-gray;
+
+  .fa {
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  .text-input-value {
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+}
+
+.preview-container {
+  width: 500px;
+  margin: 0 auto;
+
+  .preload {
+    height: 521px;
+    width: 500px;
+    background-color: $paper-gray;
+    color: $darkish-gray;
+    vertical-align: middle;
+    line-height: 10rem;
+  }
+}
+
+.variants-list {
+  position: relative;
+
+  .form-group {
+    position: relative;
+    padding-right: 110px;
+
+
+
+    div:nth-child(1) {
+      width: 98%;
+      position: relative;
+      line-height: $dimension-large;
+      background-color: $paper-gray;
+      color: $darkish-gray;
+
+      span {
+        display: inline-block;
+        line-height: inherit;
+      }
+
+      button.see-preview {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 90px;
+        border: none;
+        outline: none;
+        background-color: $pink;
+        color: $white;
+
+        &[disabled] {
+          background-color: $gray;
+          cursor: not-allowed;
+        }
+      }
+
+      button.variant-modify {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        text-align: left;
+
+        &.inactive {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    div:nth-child(2) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      line-height: $dimension-large;
+    }
+  }
+
+  .preview-variant-editor {
+    position: absolute;
+    top: 28px;
+    z-index: 2;
+    width: 100%;
+    min-height: 404px;
+    padding: 0 1rem 1rem;
+    color: $darkish-gray;
+    background: $paper-gray;
+
+    .form-group {
+      padding-right: 0;
+
+      input {
+        width: 80%;
+        padding: 6px;
+        background: none;
+        border: 1px solid $darkish-gray;
+      }
+
+      textarea {
+        width: 80%;
+        max-width: 80%;
+        height: 90px;
+        max-height: 90px;
+        padding: 6px;
+        background: none;
+        border: 1px solid $darkish-gray;
+      }
+
+      .fa-pencil-square-o {
+        position: absolute;
+        left: 85%;
+        top: 30px;
+        font-size: 2rem;
+      }
+    }
+
+
+    footer {
+      .btn {
+        width: 48%;
+      }
+
+      .btn-primary {
+        float: left;
+      }
+
+      .btn-default {
+        float: right;
+        background:none;
+        background-color: $gray;
+        color: $white;
+      }
+    }
+  }
+}
+
+.variants-alternatives {
+  .form-group {
+    label, h2 {
+      // float: left;
+      // display: inline-block;
+    }
+
+    input {
+      // float: left;
+      display: inline-block;
+      margin: 5px 4px 0 0;
+      // margin-left: 10px;
+    }
+  }
+
+  .select-images {
+    span {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}
+
+.variants-errors {
+  .fa-exclamation-triangle {
+    margin-right: 16px;
+    color: $red;
+  }
+
+  ul, li {
+    margin: 0;
+  }
+}
