@@ -2,7 +2,7 @@
   <div id="app">
     <app-header />
 
-    <aside class="sidebar-menu is-pulled-left">
+    <!-- <aside class="sidebar-menu is-pulled-left">
       <nav>
         <ul>
           <li><a href="#">Settings</a></li>
@@ -11,7 +11,7 @@
           <li><a href="#">Logout</a></li>
         </ul>
       </nav>
-    </aside>
+    </aside> -->
 
     <main class="columns is-tablet app-main-container">
       <router-view></router-view>

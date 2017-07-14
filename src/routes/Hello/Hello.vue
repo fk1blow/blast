@@ -1,35 +1,34 @@
 <template>
-  <div class="container column is-two-thirds">
+  <div class="container is-centered-tablet column">
     <article>
       <h2>Today</h2>
 
       <section>
         <ul>
           <li class="columns">
-            <aside class="column is-3">
+            <aside class="column is-3-desktop">
               <figure class="is-pulled-left image is-24x24">
                 <img src="http://bulma.io/images/placeholders/24x24.png">
               </figure>
 
-              <p>12:30 GMT</p>
+              <p>12:30:34 GMT+2</p>
             </aside>
 
-            <p class="column is-3 is-narrow-desktop">
+            <p class="column is-3">
               <span>commit: </span>
               <a href="#">53299573223</a>
             </p>
 
-            <p class="column is-4">
-              <span>target: </span>
+            <p class="column is-narrow-desktop">
+              <span>to: </span>
               <a href="#">heroku/miopic-hedgehog</a>
             </p>
 
-            <p class="column is-2">
-              <a href="#"><b>see logs</b></a>
-            </p>
-            <p class="column is-1">
-              <a href="#"><b>revert!</b></a>
-            </p>
+            <div class="column has-text-right">
+              <a href="#"><b>build logs</b></a>
+              &nbsp;
+              <a class="" href="#"><b>revert!</b></a>
+            </div>
           </li>
         </ul>
       </section>
